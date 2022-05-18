@@ -7,8 +7,8 @@ class Solution {
         for(int i = 0; i < a-1; i++){
             x += month[i];
         }
-        x += b;
-        answer = day[x % 7 - 1];
+        x += b -1;
+        answer = day[x % 7];
         return answer;
     }
 }
